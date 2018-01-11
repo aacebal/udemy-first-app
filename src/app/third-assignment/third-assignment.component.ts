@@ -21,7 +21,7 @@ export class ThirdAssignmentComponent implements OnInit {
 
   displayDetails(event: Event) {
     this.visible = !this.visible;
-    this.logs.push(this.logs.length + 1);
+    this.logs.push(new Date());
   }
 
   onVisible() {
