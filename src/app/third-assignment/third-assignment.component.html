@@ -1,0 +1,9 @@
+<button class="btn btn-primary"
+(click)="displayDetails($event)">Display Details</button>
+
+<p [ngStyle]="{visibility: onVisible()}">Secret Password = tuna</p>
+
+<div *ngFor="let log of logs">
+  <p [ngStyle]="{backgroundColor: log >= 5 ? 'blue' : 'none'}"
+  [ngClass]="{fiveLogs: log >= 5}">{{ log }}</p>
+</div>
